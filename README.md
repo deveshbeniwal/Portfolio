@@ -23,7 +23,7 @@
 | **LinkedIn** | [linkedin.com/in/devesh-beniwal-ba4460143](https://www.linkedin.com/in/devesh-beniwal-ba4460143) |
 | **GitHub** | [github.com/deveshbeniwal](https://github.com/deveshbeniwal) |
 | **Portfolio** | [deveshbeniwal.github.io/Portfolio](https://deveshbeniwal.github.io/Portfolio/) |
-| **Resume** | [Download Official PDF Resume](https://deveshbeniwal.github.io/Portfolio/assets/Devesh_Senior_Unity_Developer.pdf) |
+| **Resume** | [Download Official PDF Resume](https://deveshbeniwal.github.io/Portfolio/Devesh_Senior_Unity_Developer.pdf) |
 | **Education** | B.Tech in Computer Science & Engineering (Honours), RTU (2014 – 2018) |
 
 ---
