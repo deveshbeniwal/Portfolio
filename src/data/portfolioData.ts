@@ -35,7 +35,7 @@ export const DEVELOPER_INFO = {
   github: 'https://github.com/deveshbeniwal',
   linkedin: 'https://www.linkedin.com/in/devesh-beniwal-ba4460143',
   portfolioUrl: 'https://deveshbeniwal.github.io/Portfolio/',
-  resumePdfUrl: 'https://deveshbeniwal.github.io/Portfolio/assets/Devesh_Beniwal_Resume.pdf',
+  resumePdfUrl: './Devesh_Senior_Unity_Developer.pdf',
   education: 'B.Tech in Computer Science & Engineering (Honours) · Rajasthan Technical University (2014 – 2018)',
   summary:
     'Unity certified professional programmer with 8 years of production experience in 2D/3D, real-time multiplayer, and cross-platform game development. Skilled in C#, Unity3D, Node.js, Photon (PUN, Fusion v1/v2), Colyseus, WebRTC, Firebase, and MongoDB, with strong expertise in Game Architecture and Performance Optimization (achieving up to 30% physics & 20% draw call reduction). Delivered scalable multiplayer solutions, integrated hardware (Arduino, Leap Motion, Kinect), and deployed projects across Android, iOS, Web, and Cloud.',
