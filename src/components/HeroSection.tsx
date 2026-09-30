@@ -136,7 +136,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResumeModal, onA
                 {/* Actual Certificate Document Image Preview */}
                 <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden border border-amber-200 dark:border-slate-700 bg-slate-900 shadow-inner group-hover:scale-[1.02] transition-transform">
                   <img
-                    src="../assets/images/unity_certified_certificate_1790692183325.jpg"
+                    src={CERTIFICATIONS[0]?.certificateImage}
                     alt="Unity Certified Professional: Programmer Certificate"
                     className="w-full h-full object-cover object-top opacity-95 group-hover:opacity-100 transition-opacity"
                   />

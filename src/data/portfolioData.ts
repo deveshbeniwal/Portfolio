@@ -1,7 +1,25 @@
 import { Project, CareerMilestone, SkillCategory, Certification } from '../types/portfolio';
 
+// Local asset imports bundled by Vite (works in production & GitHub Pages)
+import deveshPortrait from '../assets/images/devesh_beniwal_portrait_1790589833950.jpg';
+import unityCertImg from '../assets/images/unity_certified_certificate_1790692183325.jpg';
+import csharpCertImg from '../assets/images/csharp_expert_certificate_1790692198575.jpg';
+
+import anarchyWarzoneImg from '../assets/images/anarchy_warzone_gameplay_1790589732878.jpg';
+import khokhoImg from '../assets/images/khokho_world_cup_gameplay_1790589750590.jpg';
+import teenpattiImg from '../assets/images/teenpatti_hangout_gameplay_1790589766685.jpg';
+import pistolduelImg from '../assets/images/pistol_duel.jpg';
+import surfSharksImg from '../assets/images/surf_sharks_gameplay_1790589782872.jpg';
+import headballImg from '../assets/images/headball_soccer_gameplay_1790589797071.jpg';
+import duckhuntImg from '../assets/images/duckhunt_leap_motion_1790589818665.jpg';
+import ludoSamratImg from '../assets/images/ludo_samrat.jpg';
+import akiroImg from '../assets/images/akiro.jpg';
+import fourplayChessImg from '../assets/images/four_p_chess.jpg';
+import arLabsImg from '../assets/images/ar.jpg';
+import arduinoImg from '../assets/images/arduino.jpg';
+
 // Devesh Beniwal Portrait
-export const DEVELOPER_AVATAR = '../assets/images/devesh_beniwal_portrait_1790589833950.jpg';
+export const DEVELOPER_AVATAR = deveshPortrait;
 
 export const DEVELOPER_INFO = {
   name: 'Devesh Beniwal',
@@ -17,7 +35,7 @@ export const DEVELOPER_INFO = {
   github: 'https://github.com/deveshbeniwal',
   linkedin: 'https://www.linkedin.com/in/devesh-beniwal-ba4460143',
   portfolioUrl: 'https://deveshbeniwal.github.io/Portfolio/',
-  resumePdfUrl: '../assets/pdf/Devesh Unity Developer.pdf',
+  resumePdfUrl: 'https://deveshbeniwal.github.io/Portfolio/assets/Devesh_Beniwal_Resume.pdf',
   education: 'B.Tech in Computer Science & Engineering (Honours) · Rajasthan Technical University (2014 – 2018)',
   summary:
     'Unity certified professional programmer with 8 years of production experience in 2D/3D, real-time multiplayer, and cross-platform game development. Skilled in C#, Unity3D, Node.js, Photon (PUN, Fusion v1/v2), Colyseus, WebRTC, Firebase, and MongoDB, with strong expertise in Game Architecture and Performance Optimization (achieving up to 30% physics & 20% draw call reduction). Delivered scalable multiplayer solutions, integrated hardware (Arduino, Leap Motion, Kinect), and deployed projects across Android, iOS, Web, and Cloud.',
@@ -75,7 +93,7 @@ export const PROJECTS: Project[] = [
             'Integrated advanced vehicle physics (cars, helicopters, tanks), migrated networking from Photon Fusion v1 to v2, implemented combat objectives, and achieved 30% physics optimization.',
         fullOverview:
             'Anarchy Warzone is a massive tactical combat experience featuring dynamic vehicle warfare and aerial dogfights. As Senior Unity Developer, I engineered realistic vehicle suspension and flight physics for cars, tanks, and helicopters. I led the architectural migration from Photon Fusion v1 to v2, resolving latency desyncs and improving room stability. Through deep profiling, I delivered 30% physics optimization and a 20% reduction in draw calls.',
-        image: '../assets/images/anarchy_warzone_gameplay_1790589732878.jpg',
+        image: anarchyWarzoneImg,
         year: '2024 – Present',
         role: 'Senior Unity Developer (Sparkshift)',
         platforms: ['Android (Playstore)', 'iOS (Appstore)'],
@@ -130,7 +148,7 @@ export const PROJECTS: Project[] = [
             "Collaborated with the KhoKho Federation of India to create India's first official 3D KhoKho game, featuring intelligent AI teammates, Inverse Kinematics (IK), and tournament modes.",
         fullOverview:
             "Developed in partnership with the KhoKho Federation of India, this official sports title captures the lightning-fast agility of KhoKho. I designed the complete game loop, AI chasing/defending pathfinding, team selection, and realistic character motions using Inverse Kinematics (IK) for pole turning and diving tags. Integrated Google Play Games leaderboards, IAP, and Firebase live-ops.",
-        image: '../assets/images/khokho_world_cup_gameplay_1790589750590.jpg',
+        image: khokhoImg,
         year: '2025',
         role: 'Lead Gameplay & AI Engineer',
         platforms: ['Android (Playstore)', 'iOS (Appstore)'],
@@ -160,7 +178,7 @@ export const PROJECTS: Project[] = [
             'Engineered real-time multiplayer casino game with live face-to-face video calling. Built scalable Colyseus (Node.js + TypeScript) backend deployed on Ubuntu Cloud with MongoDB.',
         fullOverview:
             'TeenPatti Hangout combines the classic social card game with synchronized face-to-face video and voice calling right on the game table. I architected the server-authoritative card shuffling, betting pots, and turn timeouts using Colyseus and Node.js. On the cloud side, I configured MongoDB horizontal clustering, Nginx reverse proxy, and Mongoose schemas on Ubuntu cloud instances.',
-        image: '../assets/images/teenpatti_hangout_gameplay_1790589766685.jpg',
+        image: teenpattiImg,
         year: '2025',
         role: 'Full-Stack Unity & Backend Architect (Aarrsol)',
         platforms: ['Android (Playstore)', 'WebGL', 'iOS'],
@@ -189,7 +207,7 @@ export const PROJECTS: Project[] = [
             'Created from scratch in Unity with C#, featuring realistic ballistics, weapon recoil, cinematic slow-motion VFX camera systems, multi-tiered AI opponents, and progressive western duel arenas.',
         fullOverview:
             'Pistol Duel 3D: Gun Shooting is an action-packed Wild West shooter where fast reflexes, accurate aiming, and quick shooting decide every duel. Developed completely from scratch, I engineered the realistic ballistics, weapon recoil kickback, dynamic ragdoll responses, and a cinematic slow-motion bullet-time VFX system triggered on precision headshots and critical shootouts. Designed progressive duel stages with reactive AI opponents featuring variable reaction times, flinch, and targeting accuracy.',
-        image: '../assets/images/pistol_duel.jpg',
+        image: pistolduelImg,
         year: '2026',
         role: 'Senior Unity Developer (Sparkshift)',
         platforms: ['Android (Play Store)'],
@@ -220,7 +238,7 @@ export const PROJECTS: Project[] = [
             'Created a physics-based 2-player football game with synchronized multiplayer, custom Node.js + Colyseus backend, and lag-compensated ball physics replication.',
         fullOverview:
             'Headball pits two players against each other in fast-paced 90-second soccer matches. Developed the synchronized networked physics engine in Unity and Colyseus, ensuring precise header timing, ball bounces, and super-shot power-ups without desyncs.',
-        image: '../assets/images/headball_soccer_gameplay_1790589797071.jpg',
+        image: headballImg,
         year: '2023',
         role: 'Multiplayer Game Engineer',
         platforms: ['Android', 'iOS', 'WebGL'],
@@ -248,7 +266,7 @@ export const PROJECTS: Project[] = [
             'Developed an endless surfing adventure game with Firebase integration, custom admin portal for dynamic content, in-app updates, deep linking, and Crashlytics analytics.',
         fullOverview:
             'Surf Sharks challenges players to navigate tropical waves, leap over obstacle reefs, and outrun comical cartoon sharks. I built procedural wave generation, coin and star powerup spawners, and an administrative portal in Firebase allowing content managers to update character skins and seasonal events on the fly.',
-        image: '../assets/images/surf_sharks_gameplay_1790589782872.jpg',
+        image: surfSharksImg,
         year: '2022',
         role: 'Senior Game Developer (Logic Simplified)',
         platforms: ['Android (Playstore)', 'iOS (Appstore)'],
@@ -276,7 +294,7 @@ export const PROJECTS: Project[] = [
             'Built gesture-controlled AR game using Leap Motion for real-time hand tracking and gun control. Developed AR drawing app rendering in real-world spatial coordinates with ARFoundation.',
         fullOverview:
             'Pioneering natural user interface (NUI) interaction in Unity. Developed an interactive DuckHunt arcade title where players aim and fire using physical finger gun gestures tracked by the Leap Motion controller. Also developed an AR creative suite allowing spatial 3D drawing mapped to real-world plane surfaces.',
-        image: '../assets/images/duckhunt_leap_motion_1790589818665.jpg',
+        image: duckhuntImg,
         year: '2021 – 2022',
         role: 'AR/VR & Hardware Systems Engineer',
         platforms: ['PC / Leap Motion', 'Mobile AR (ARCore/ARKit)'],
@@ -305,7 +323,7 @@ export const PROJECTS: Project[] = [
             'Engineered from scratch using Photon multiplayer & chat, UniWebView for real-money transactions, UniTask asynchronous programming, bot AI matchmaking, and resilient reconnection logic.',
         fullOverview:
             'Ludo Samrat is a premier real-time multiplayer dice game for 2 to 4 players featuring both online multiplayer and offline modes. Built entirely from scratch, I engineered the Photon PUN2 multiplayer room lifecycle, synchronized dice rolls, and pawn movement mechanics. Designed the complete financial wallet flow for real-money gameplay using UniWebView and secure REST APIs. Optimized the entire game architecture with UniTask for asynchronous zero-allocation routines, and developed intelligent bot algorithms with seamless player reconnection logic.',
-        image: '../assets/images/ludo_samrat.jpg',
+        image: ludoSamratImg,
         year: '2022 – 2023',
         role: 'Senior Unity & Netcode Programmer',
         platforms: ['Android', 'iOS', 'Web'],
@@ -335,7 +353,7 @@ export const PROJECTS: Project[] = [
             'Featured by Google in Play Instant! Designed dynamic circular dodging mechanics, enemy wave algorithms, power-up systems, In-App Purchases, Google Play Games & Game Center leaderboards.',
         fullOverview:
             'Akiro is an addictive hyper-casual arcade title where players jump between concentric rings to dodge oncoming monsters and hazard patterns. Featured by Google in the prestigious Play Instant category, I engineered the entire gameplay from concept to store release. Implemented diverse power-ups (speed slow-down, gem multipliers, screen-clearing waves), multi-currency In-App Purchases (IAP), Google Play Instant package optimization (<15MB), cloud save, and social leaderboards across both Google Play Games and Apple Game Center.',
-        image: '../assets/images/akiro.jpg',
+        image: akiroImg,
         year: '2020 – 2021',
         role: 'Lead Unity Game Developer (Addonvision)',
         platforms: ['Android (Playstore)', 'iOS (Appstore)', 'Google Play Instant'],
@@ -366,7 +384,7 @@ export const PROJECTS: Project[] = [
             'Developed 3D multiplayer chess for PC on Steam. Integrated Photon PUN2 for real-time matches and Photon Chat, Steamworks SDK for authentication and achievements, and offline practice modes.',
         fullOverview:
             'FourPlay Chess is an immersive 3D chess title designed for competitive PC players on Steam. I implemented the full 3D board interaction, legal move validation, check/checkmate detection, and real-time multiplayer over Photon PUN2 and Photon Chat. Built offline AI practice modes, full Steamworks.NET SDK integration for social login, friends list invites, cloud saves, and Steam achievements, and prepared the final production build pipeline for Steam deployment.',
-        image: '../assets/images/four_p_chess.jpg',
+        image: fourplayChessImg,
         year: '2021 – 2022',
         role: 'Lead Unity & Steam Engineer',
         platforms: ['PC (Steam)', 'Windows'],
@@ -397,7 +415,7 @@ export const PROJECTS: Project[] = [
             'Suite of augmented reality applications built with Unity, ARFoundation, ARCore, and Vuforia. Features AR-Car physics driving, 3D LineRenderer spatial drawing, and Vuforia physical model tracking.',
         fullOverview:
             'Developed as a research and engineering suite to push the boundaries of Augmented Reality using Unity, ARFoundation, ARCore, and Vuforia. The suite consists of 3 distinct applications: 1) AR-Car: Horizontal plane detection placing realistic driveable cars with WheelColliders, suspension physics, and custom color/wheel modifiers; 2) AR-Drawing: Spatial 3D painting using LineRenderer with camera distance offset and interactive color palette; 3) Model-Tracking: Vuforia 3D object scanning handling OnTracked/OnTrackedLost events with real-time occlusion masking.',
-        image: '../assets/images/ar.jpg',
+        image: arLabsImg,
         year: '2020 – 2021',
         role: 'AR/VR Gameplay & Simulation Engineer',
         platforms: ['Android (ARCore)', 'ARFoundation'],
@@ -443,7 +461,7 @@ export const PROJECTS: Project[] = [
             'Physical computing projects connecting Unity 3D with Arduino via high-speed serial ports. Features finger gesture counting to addressable RGB LEDs, music spectrum trail animations, and 6-DOF MPU6050 gyroscope ski-controller.',
         fullOverview:
             'An innovative suite of physical computing and natural human-machine interfaces developed in Unity and C# interfacing with Arduino microcontrollers: 1) Finger-Counts: Real-time hand skeletal tracking reading open finger counts in Unity and transmitting data via serial COM ports to drive physical addressable RGB LED arrays; 2) Music-Trail: Extracting live FFT audio spectrum data in Unity and streaming it to an Arduino to produce cascading LED trail ripples; 3) Thunder-Beat: Sound sensor integration pulsing reactive lighting effects; 4) Gyro-Controller: Interfacing an MPU6050 6-DOF gyroscope/accelerometer over serial to control a 3D skiing game directly with physical tilts.',
-        image: '../assets/images/arduino.jpg',
+        image: arduinoImg,
         year: '2020 – 2024',
         role: 'Unity Hardware Systems Architect',
         platforms: ['PC (Windows)', 'Arduino Hardware'],
@@ -743,7 +761,7 @@ export const CERTIFICATIONS: Certification[] = [
     badgeType: 'expert',
     verifiedUrl: 'https://www.credly.com/badges/296cd6e7-9740-490c-9543-ed14b1e3a329/linked_in_profile',
     keySkills: ['Unity Engine Architecture', 'Performance Profiling', 'Gameplay Systems', 'Physics Optimization'],
-    certificateImage: '../assets/images/unity_certified_certificate_1790692183325.jpg',
+    certificateImage: unityCertImg,
   },
   {
     id: 'ds-design-patterns',
@@ -756,7 +774,7 @@ export const CERTIFICATIONS: Certification[] = [
     badgeType: 'expert',
     verifiedUrl: 'https://www.coursera.org/account/accomplishments/verify/DV5JKHZGE373',
     keySkills: ['Data Structures', 'Design Patterns', 'Algorithms', 'Clean Game Architecture'],
-    certificateImage: '../assets/images/csharp_expert_certificate_1790692198575.jpg',
+    certificateImage: csharpCertImg,
   },
 ];
 

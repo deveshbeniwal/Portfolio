@@ -22,7 +22,7 @@
 | **Phone / WhatsApp** | [+91-8854832762](https://wa.me/918854832762) |
 | **LinkedIn** | [linkedin.com/in/devesh-beniwal-ba4460143](https://www.linkedin.com/in/devesh-beniwal-ba4460143) |
 | **GitHub** | [github.com/deveshbeniwal](https://github.com/deveshbeniwal) |
-| **Legacy Portfolio** | [deveshbeniwal.github.io/Portfolio](https://deveshbeniwal.github.io/Portfolio/) |
+| **Portfolio** | [deveshbeniwal.github.io/Portfolio](https://deveshbeniwal.github.io/Portfolio/) |
 | **Resume** | [Download Official PDF Resume](https://deveshbeniwal.github.io/Portfolio/assets/Devesh_Beniwal_Resume.pdf) |
 | **Education** | B.Tech in Computer Science & Engineering (Honours), RTU (2014 – 2018) |
 
