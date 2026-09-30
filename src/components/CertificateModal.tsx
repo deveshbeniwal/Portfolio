@@ -37,7 +37,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
   if (!cert) return null;
 
   const certificateImgSrc =
-    cert.certificateImage || '/src/assets/images/unity_certified_certificate_1790692183325.jpg';
+      cert.certificateImage || '../assets/images/unity_certified_certificate_1790692183325.jpg';
 
   const modalContent = (
     <div
