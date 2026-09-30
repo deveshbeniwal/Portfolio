@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-game: 'Fredoka', 'Outfit', sans-serif;
+    --font-display: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f0f9ff;
+    color: #1e293b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html.dark body {
+    background-color: #090d16;
+    color: #f1f5f9;
+  }
+}
+
+.font-game {
+  font-family: 'Fredoka', 'Outfit', sans-serif;
+}
+
+.font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Playful Game Button 3D Press Effect */
+.btn-game-yellow {
+  background: linear-gradient(180deg, #fde047 0%, #eab308 100%);
+  border-bottom: 4px solid #ca8a04;
+  color: #713f12;
+  transition: all 0.1s ease;
+}
+.btn-game-yellow:hover {
+  background: linear-gradient(180deg, #fef08a 0%, #facc15 100%);
+  transform: translateY(-1px);
+}
+.btn-game-yellow:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.btn-game-blue {
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+  border-bottom: 4px solid #0369a1;
+  color: #ffffff;
+  transition: all 0.1s ease;
+}
+.btn-game-blue:hover {
+  background: linear-gradient(180deg, #60a5fa 0%, #2563eb 100%);
+  transform: translateY(-1px);
+}
+.btn-game-blue:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.btn-game-green {
+  background: linear-gradient(180deg, #4ade80 0%, #16a34a 100%);
+  border-bottom: 4px solid #15803d;
+  color: #ffffff;
+  transition: all 0.1s ease;
+}
+.btn-game-green:hover {
+  transform: translateY(-1px);
+}
+.btn-game-green:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+/* Bright & Dark Game Card Styling */
+.game-card {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 10px 0 #cbd5e1, 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 1.5rem;
+}
+.dark .game-card {
+  background: #0f172a;
+  border-color: #1e293b;
+  box-shadow: 0 10px 0 #020617, 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+.game-card-hover {
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.game-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 0 #cbd5e1, 0 20px 30px rgba(0, 0, 0, 0.08);
+}
+.dark .game-card-hover:hover {
+  box-shadow: 0 14px 0 #020617, 0 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+.game-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 2px solid #e0f2fe;
+  box-shadow: 0 8px 30px rgba(14, 165, 233, 0.08), 0 4px 0 #bae6fd;
+}
+.dark .game-panel {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: #1e293b;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 4px 0 #0f172a;
+}
+
+/* Game Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #e0f2fe;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #38bdf8;
+  border-radius: 9999px;
+  border: 2px solid #e0f2fe;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-color: #090d16;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Game Animations */
+@keyframes coin-spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+@keyframes float-island {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+
+.animate-coin {
+  animation: coin-spin 3s linear infinite;
+}
+
+.animate-float-island {
+  animation: float-island 4s ease-in-out infinite;
+}
+
+/* Background floating cloud pattern */
+.bg-sky-pattern {
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 40%),
+    radial-gradient(circle at 85% 60%, rgba(254, 240, 138, 0.4) 0%, transparent 45%),
+    radial-gradient(circle at 50% 90%, rgba(186, 230, 253, 0.5) 0%, transparent 50%);
+}
+
+/* 3D Flash Card Flip utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.perspective-1200 {
+  perspective: 1200px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
